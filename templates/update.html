@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGFineArts-admin</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/admin.css')}}">
+</head>
+<body>
+    <header>
+        <h1>UPDATE ITEM</h1>
+    </header>
+    <div class="form-entry">
+        	<form action="" method="POST">
+    {% for data in edit_result  %}
+        
+    <div>
+        <label for="item">ITEM:</label>    
+            <input type="text" name = 'item' class = 'entry' value = {{data.item}}>
+    </div>
+    <div class="pos-div">
+        <label for="first">FIRST:</label>    
+            <input type="text" name = 'first' class = 'entry' value = {{data.first}}>
+        <label for="first-dep">Department:</label>    
+            <input type="text" name = 'first-dep' class = 'entry' value = {{data.first_dep}}>
+        <label for="first-grp">Group:</label>    
+            <input type="text" name = 'first-grp' class = 'entry' value = {{data.first_grp}}>
+    </div>
+    <div class ="pos-div">
+        <label for="sec">SECOND:</label>    
+            <input type="text" name = 'sec' class = 'entry' value = {{data.sec}}>
+        <label for="sec-dep">Department:</label>    
+            <input type="text" name = 'sec-dep' class = 'entry' value = {{data.sec_dep}}>
+        <label for="sec-grp">Group:</label>    
+            <input type="text" name = 'sec-grp' class = 'entry' value = {{data.sec_grp}}>
+    </div>
+    <div class="pos-div">
+        <label for="third">THIRD:</label>    
+            <input type="text" name = 'third' class = 'entry' value = {{data.third}}>
+        <label for="third-dep">Department:</label>    
+            <input type="text" name = 'third-dep' class = 'entry' value = {{data.third_dep}}>
+        <label for="third-grp">Group:</label>    
+            <input type="text" name = 'third-grp' class = 'entry' value = {{data.third_grp}}>
+    </div> 
+    {% endfor %}
+       
+
+        <input type="submit" value="UPDATE" id = 'submit-bt'>
+            </form>
+    </div>

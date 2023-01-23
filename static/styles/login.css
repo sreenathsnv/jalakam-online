@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(163, 235, 202, 0.959) ;
+    /* background-image: url('file:///C:/Users/id/Downloads/4k-wallpaper-afterglow-beach-2162439.jpg'); */
+    /* width:1000px;height:700px */
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:1000px;
+    height:1000px;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(246, 250, 250, 0.959) ;
+    width:300px;
+    height:400px;
+    margin-bottom: 2.5vh;
+    border: 1px solid rgb(162, 6, 100);
+
+}
+#Lgn{
+    font-size:40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing:2px;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    padding:1px 1px;
+}
+
+.info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:5vh;
+    height: auto;
+    width:auto;
+}
+.usr
+{
+    background: rgb(255, 255, 255);
+    width:200px;
+    height:40px;
+    padding-left:20px;
+    margin-bottom: 2.5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 1vh;
+    border: 1px solid rgb(35, 34, 34);
+
+}
+.pass
+{
+    background: rgb(255, 255, 255);
+    width:200px;
+    height:40px;
+    margin-bottom: 2.5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 1vh;
+    border: 1px solid rgb(35, 34, 34);
+
+
+}
+.enter
+{
+    background:rgb(0, 20, 168);
+    font-size:20px;
+    width:200px;
+    height:40px;
+    padding-left:20px;
+    margin:10px 0px 15px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 1vh;
+    color:#fff;
+    border: 1px solid rgb(35, 34, 34);
+    margin-right: 2vh;
+
+}
+.enter:active{
+    
+    background:rgba(254, 254, 254, 0.399);
+    color:rgba(0, 0, 0, 0.578);
+
+}
+

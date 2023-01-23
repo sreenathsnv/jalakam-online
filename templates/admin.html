@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGFineArts-admin</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/admin.css')}}">
+</head>
+<body>
+    <header>
+        <h1>ADMIN PANEL</h1>
+    </header>
+    <div class="form-entry">
+        	<form action="" method="POST">
+        <div>
+            <label for="item">ITEM:</label>    
+                <input type="text" name = 'item' class = 'entry'>
+        </div>
+        <div class="pos-div">
+            <label for="first">FIRST:</label>    
+                <input type="text" name = 'first' class = 'entry'>
+            <label for="first-dep">Department:</label>    
+                <input type="text" name = 'first-dep' class = 'entry'>
+            <label for="first-grp">Group:</label>    
+                <input type="text" name = 'first-grp' class = 'entry'>
+        </div>
+        <div class ="pos-div">
+            <label for="sec">SECOND:</label>    
+                <input type="text" name = 'sec' class = 'entry'>
+            <label for="sec-dep">Department:</label>    
+                <input type="text" name = 'sec-dep' class = 'entry'>
+            <label for="sec-grp">Group:</label>    
+                <input type="text" name = 'sec-grp' class = 'entry'>
+        </div>
+        <div class="pos-div">
+            <label for="third">THIRD:</label>    
+                <input type="text" name = 'third' class = 'entry'>
+            <label for="third-dep">Department:</label>    
+                <input type="text" name = 'third-dep' class = 'entry'>
+            <label for="third-grp">Group:</label>    
+                <input type="text" name = 'third-grp' class = 'entry'>
+        </div>
+
+        <input type="submit" value="SUBMIT" id = 'submit-bt'>
+            </form>
+    </div>
+
+    <hr width = 96% style="margin:2vh;">
+
+    <div class="entries">
+        <table>
+            
+            <tr>
+                <th>SNO</th>
+                <th>ITEM</th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            {% for data in all_result %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{data.item}}</td>
+                <td>
+                    <a href = '/delete/{{data.sno}}' type = 'button' class = 'btn'>DELETE</a>
+                </td>
+                <td><a href = '/update/{{data.sno}}' type = 'button' class = 'btn'>UPDATE</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

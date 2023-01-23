@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG-Artfest2023</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/index.css')}}" type = "text/css">
+</head>
+<body>
+    <h1>MAHATMA GANDHI COLLEGE ,IRITTY</h1>
+    <!-- <div class="banner">
+        hello....
+    </div> -->
+    <div class="sub-head">RESULTS</div>
+    
+    <div class="result-container">
+
+    <marquee  direction="up">   
+<!-- ================================================= -->
+
+        {% for data in all_result  %}
+            
+        <div class="container">
+            <p class="item">{{data.item}}</p>
+            <div class="post">
+                <ul class="pos">
+                    <li>1</li>
+                    <li>{{data.first}}</li>
+                    <li>{{data.first_dep}}</li>
+                    <li>{{data.first_grp}}</li>
+                </ul>
+    
+                <ul class="pos">
+                    <li>2</li>
+                    <li>{{data.sec}}</li>
+                    <li>{{data.sec_dep}}</li>
+                    <li>{{data.sec_grp}}</li>
+                </ul>
+            
+            
+                <ul class="pos">
+                    <li>3</li>
+                    <li>{{data.third}}</li>
+                    <li>{{data.third_dep}}</li>
+                    <li>{{data.third_grp}}</li>
+                </ul>
+            
+            </div>
+        </div>
+        {% endfor %}
+        
+<!-- ================================================= -->
+<!-- ================================================= -->
+
+
+    </marquee>
+    </div>
+</body>
+</html>
+
+<!-- font-family: 'Concert One', cursive;
+font-family: 'Mali', cursive;
+font-family: 'Mitr', sans-serif;
+font-family: 'Poppins', sans-serif; -->
