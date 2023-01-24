@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Mali:wght@500&family=Mitr&family=Poppins:ital,wght@0,600;0,700;1,500&display=swap');
 
-@media only screen and (min-width:550px) {
+@media only screen and (max-width: 549px) 
 
+{
     
-    
+
 *
 {
 
@@ -14,6 +15,7 @@
 }
 
 body{
+    
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -25,18 +27,16 @@ h1{
 
  
     font-family:'Mitr', sans-serif,'Times New Roman', Times, serif;
-    font-size: 3.8vh;
+    font-size: 2.8vh;
     letter-spacing: .2vh;
     color: rgb(109, 198, 240);
-
 }
 .banner
 {
 
     background: #dfdcdc;
-    margin-top: 8vh;
     width:100%;
-    height: 30vh;
+    height: 15vh;
     border: 1px solid rgb(89, 87, 87);
 }
 img
@@ -44,15 +44,18 @@ img
     width:100%;
     height: 100%;
     object-fit: fill;
+    
 }
 .sub-head
 {
  
-   
-    font-size: 9vh;
+    font-size: 5vh;
     font-family: 'Poppins',sans-serif,'Courier New', Courier, monospace;
     font-weight: 700;
     color:#e04646 ;
+   
+    
+    
 }
 .result-container
 {
@@ -60,17 +63,16 @@ img
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    background: #ededed;
     height:min(55vh);
-    width:85%;
-    margin:5vh 2vh 2vh 2vh;
-    padding:3vh;
-    border:2px solid rgb(183, 183, 183);
-    border-radius: 3vh;
-    overflow:hidden;   
+    width:100%;
+    overflow:hidden;
+    margin-top:3vh;
+
+     
 }
 .result-container .container
 {
+    
     display: flex;
     flex-direction: column;
     position: relative;
@@ -80,30 +82,30 @@ img
     padding:1vh;
     margin:2vh;
     border-radius: 2vh;
-    transition:cubic-bezier(0.075, 0.82, 0.165, 1); 
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .result-container .container .item
 {
-    font-size: 5vh; 
+    
+    font-size: 2vh; 
     font-family:Poppins;
     font-weight: bold;
     color: rgb(67, 54, 101);
-    margin-bottom: 2.7vh;
+    margin-bottom: 1.2vh;
 }
 .result-container .container .post
 {
+    
     display: flex;
     flex-direction: column;
-
 }
 .result-container .container .post .pos
 {
+    
     display: flex;
-    width:65vh;
+    width:43vh;
     justify-content: space-between;
     margin: 1vh;
-
-    align-items: center;
 }
 .result-container .container .post .pos li{
 
@@ -111,8 +113,12 @@ img
     margin:.5vh 3vh .5vh 3vh;
     color:rgb(2, 2, 2);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5vh;
-    font-weight: 900;
+    font-size: 2.3vh;
+    font-weight: 700;
     font-variant: small-caps;
+
 }
+
+    
+
 }

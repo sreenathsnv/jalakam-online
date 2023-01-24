@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Mali:wght@500&family=Mitr&family=Poppins:ital,wght@0,600;0,700;1,500&display=swap');
 
-@media only screen and (min-width:550px) {
+@media only screen and (max-width: 600px) 
 
+{
     
-    
+
 *
 {
 
@@ -25,7 +26,7 @@ h1{
 
  
     font-family:'Mitr', sans-serif,'Times New Roman', Times, serif;
-    font-size: 3.8vh;
+    font-size: 1vh;
     letter-spacing: .2vh;
     color: rgb(109, 198, 240);
 
@@ -34,16 +35,9 @@ h1{
 {
 
     background: #dfdcdc;
-    margin-top: 8vh;
     width:100%;
-    height: 30vh;
+    height: 25vh;
     border: 1px solid rgb(89, 87, 87);
-}
-img
-{
-    width:100%;
-    height: 100%;
-    object-fit: fill;
 }
 .sub-head
 {
@@ -115,4 +109,8 @@ img
     font-weight: 900;
     font-variant: small-caps;
 }
+
+
+
+
 }

@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MG-Artfest2023</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/indexmob.css')}}" type = "text/css">
     <link rel="stylesheet" href="{{url_for('static',filename='styles/index.css')}}" type = "text/css">
 </head>
 <body>
+
+<script>
+    alert('Please Turn on Desktop mode to use this app:)');
+</script>
+
+
     <h1>MAHATMA GANDHI COLLEGE ,IRITTY</h1>
-    <!-- <div class="banner">
-        hello....
-    </div> -->
+    <div class="banner">
+        <img src="{{url_for('static',filename='resources/logo.jpg')}}" alt="Jalakam 2k23">
+    </div>
     <div class="sub-head">RESULTS</div>
     
     <div class="result-container">
 
-    <marquee  direction="up">   
+    <!-- <marquee  direction="up">    -->
 <!-- ================================================= -->
 
         {% for data in all_result  %}
